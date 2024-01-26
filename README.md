@@ -37,7 +37,7 @@ To use the Readability Score Analyzer, follow these steps:
 4. Open a terminal or command prompt, navigate to the project's directory, and compile the Java program:
 
    ```
-    cd /path/to/your/project/src
+   cd /path/to/your/project/src
     ```
    
     ```
