@@ -35,10 +35,15 @@ To use the Readability Score Analyzer, follow these steps:
 2. Clone or download this repository to your local machine.
 3. Prepare a `.txt` file with the text you wish to analyze and place it in the same directory as the Java program.
 4. Open a terminal or command prompt, navigate to the project's directory, and compile the Java program:
+
+   ```
+    cd /path/to/your/project/src
+    ```
+   
     ```
     javac Main.java
     ```
-5. Run the program with the text file as an argument:
+6. Run the program with the text file as an argument:
     ```
     java Main yourTextFile.txt
     ```
