@@ -11,8 +11,7 @@ The Readability Score Analyzer is a Java application designed to evaluate the re
 #### Algorithms
 
 ##### Automated Readability Index (ARI)
-\[ \text{ARI} = 4.71 \left( \frac{\text{characters}}{\text{words}} \right) + 0.5 \left( \frac{\text{words}}{\text{sentences}} \right) - 21.43 \]
-
+\forall x \in X, \quad \exists y \leq \epsilon
 ##### Flesch–Kincaid Readability Tests
 \[ \text{FK} = 0.39 \left( \frac{\text{words}}{\text{sentences}} \right) + 11.8 \left( \frac{\text{syllables}}{\text{words}} \right) - 15.59 \]
 
