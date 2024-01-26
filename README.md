@@ -52,7 +52,3 @@ We welcome contributions to the Readability Score Analyzer! Feel free to fork th
 ## License
 
 This project is open-source and available under the MIT License.
-
----
-
-Remember to replace the placeholders like `yourTextFile.txt` and `Main.java` with the actual names used in your project. The LaTeX images are hosted using an external service (Codecogs), so ensure you have internet access when viewing the README on GitHub to load the equation images correctly.
