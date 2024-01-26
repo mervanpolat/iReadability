@@ -1,56 +1,58 @@
-### Readability Score Analyzer
+# Readability Score Analyzer
 
-The Readability Score Analyzer is a Java application designed to evaluate the readability of English texts. It employs four distinct metrics: the Automated Readability Index (ARI), Flesch–Kincaid readability tests, the Simple Measure of Gobbledygook (SMOG) index, and the Coleman–Liau index. These metrics offer insights into the text's complexity, correlating with an educational grade level required for comprehension.
+The Readability Score Analyzer is a Java-based tool designed to assess the readability of English texts. It employs several well-known algorithms to provide insights into the text's complexity, correlating it with an educational grade level necessary for comprehension. This tool is invaluable for educators, writers, and content creators aiming to tailor their content to a specific audience's understanding.
 
-#### Features
-- **Automated Readability Index (ARI)**
-- **Flesch–Kincaid Readability Tests**
-- **Simple Measure of Gobbledygook (SMOG)**
-- **Coleman–Liau Index**
+## Features
 
-#### Algorithms
+This application calculates readability scores based on the following metrics:
 
-##### Automated Readability Index (ARI)
-\forall x \in X, \quad \exists y \leq \epsilon
-##### Flesch–Kincaid Readability Tests
-\[ \text{FK} = 0.39 \left( \frac{\text{words}}{\text{sentences}} \right) + 11.8 \left( \frac{\text{syllables}}{\text{words}} \right) - 15.59 \]
+- Automated Readability Index (ARI)
+- Flesch–Kincaid Readability Tests
+- Simple Measure of Gobbledygook (SMOG)
+- Coleman–Liau Index
 
-##### Simple Measure of Gobbledygook (SMOG)
-\[ \text{SMOG} = 1.043 \sqrt{\text{polysyllables} \times \frac{30}{\text{sentences}}} + 3.1291 \]
+## Algorithms
 
-##### Coleman–Liau Index
-\[ \text{CLI} = 0.0588 \times L - 0.296 \times S - 15.8 \]
-where \( L \) is the average number of letters per 100 words and \( S \) is the average number of sentences per 100 words.
+### Automated Readability Index (ARI)
+![ARI Formula](https://latex.codecogs.com/svg.latex?%5CLARGE%20ARI%20%3D%204.71%20%5Ctimes%20%5Cfrac%7B%5Ctext%7Bcharacters%7D%7D%7B%5Ctext%7Bwords%7D%7D%20&plus;%200.5%20%5Ctimes%20%5Cfrac%7B%5Ctext%7Bwords%7D%7D%7B%5Ctext%7Bsentences%7D%7D%20-%2021.43)
 
-#### Getting Started
+### Flesch–Kincaid Readability Tests
+![FK Formula](https://latex.codecogs.com/svg.latex?%5CLARGE%20FK%20%3D%200.39%20%5Ctimes%20%5Cfrac%7B%5Ctext%7Bwords%7D%7D%7B%5Ctext%7Bsentences%7D%7D%20&plus;%2011.8%20%5Ctimes%20%5Cfrac%7B%5Ctext%7Bsyllables%7D%7D%7B%5Ctext%7Bwords%7D%7D%20-%2015.59)
 
-1. **Preparation**: Ensure you have Java installed on your system.
-2. **Download**: Clone or download this repository to your local machine.
-3. **Text File**: Prepare a `.txt` file with the text you want to analyze. Ensure it is placed in the same directory as the Java program.
-4. **Compilation**: Open a terminal or command prompt, navigate to the project's `src` directory, and compile the Java program:
-    ```bash
+### Simple Measure of Gobbledygook (SMOG)
+![SMOG Formula](https://latex.codecogs.com/svg.latex?%5CLARGE%20SMOG%20%3D%201.043%20%5Csqrt%7B%5Ctext%7Bpolysyllables%7D%20%5Ctimes%20%5Cfrac%7B30%7D%7B%5Ctext%7Bsentences%7D%7D%7D%20&plus;%203.1291)
+
+### Coleman–Liau Index
+![CLI Formula](https://latex.codecogs.com/svg.latex?%5CLARGE%20CLI%20%3D%200.0588%20%5Ctimes%20L%20-%200.296%20%5Ctimes%20S%20-%2015.8)
+
+*Note: In the Coleman–Liau Index, \( L \) represents the average number of letters per 100 words, and \( S \) represents the average number of sentences per 100 words.*
+
+## Getting Started
+
+To use the Readability Score Analyzer, follow these steps:
+
+1. Ensure Java is installed on your system.
+2. Clone or download this repository to your local machine.
+3. Prepare a `.txt` file with the text you wish to analyze and place it in the same directory as the Java program.
+4. Open a terminal or command prompt, navigate to the project's directory, and compile the Java program:
+    ```
     javac Main.java
     ```
-5. **Execution**: Run the program with the text file as a command-line argument:
-    ```bash
+5. Run the program with the text file as an argument:
+    ```
     java Main yourTextFile.txt
     ```
-   Replace `yourTextFile.txt` with the name of your actual text file.
 
-#### Running the Program
+Replace `yourTextFile.txt` with the name of your actual text file.
 
-To analyze the readability of `QuantumMechanics.txt` located in the `src` folder, execute the following command in the terminal or command prompt from the `src` directory:
+## Contributing
 
-```bash
-java Main QuantumMechanics.txt
-```
+We welcome contributions to the Readability Score Analyzer! Feel free to fork the repository, make improvements, and submit pull requests.
 
-The program will output readability scores based on the implemented algorithms along with the estimated age/grade level for each score.
-
-#### Contributing
-
-Contributions to the Readability Score Analyzer are welcome! Feel free to fork the repository, make improvements, and submit pull requests.
-
-#### License
+## License
 
 This project is open-source and available under the MIT License.
+
+---
+
+Remember to replace the placeholders like `yourTextFile.txt` and `Main.java` with the actual names used in your project. The LaTeX images are hosted using an external service (Codecogs), so ensure you have internet access when viewing the README on GitHub to load the equation images correctly.
